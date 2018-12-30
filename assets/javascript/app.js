@@ -2,54 +2,33 @@ var game = document.querySelector('main');
 
 
 var score = 0;
-var wrong = "wrong";
-var correct = "correct";
+var answer = [];
+var correct = 0;
+var wrong = 0;
 
-const questions = [
+//questions
+var question = [
     {
-        prompt: "what color are oranges?\n(a) orange\n\ (b) green\n(c) yellow",
-    answer: "a"
- },
- {
-     prompt: "what color are Bananas?\n(a) brown\n\ (b) purple\n(c) yellow",
-     anser: "c"
-
- },
- {
-     prompt: "What color is is the sky?\n(a) pink\n\
-     (b) blue\n(c) green",
-     answer: "b"
- }
+        ask: "What color is Thanos?",
+        option: ["pink", "blue", "red", "purple"],
+        right: "purple",
+    },
+    {
+        ask: "Who is Starloards favorite actor?",
+        option: ["Brian Cranston", "Samuel L. Jackson", "Kevin Bacon", "Tom Cruse"],
+        right: "Kevin Bacon",
+    },
+    {
+        ask: "Where is SpiderMan from?",
+        option: ["Orlando", "Queens", "Brooklyn", "Portland"],
+        right: "Queens",
+    },
+    {
+        ask: "How many kids does HawkEye have?",
+        option: ["Nine", "Three", "Two", "Five"],
+        right: "Two",
+    },
 ];
-
-
-
-for(var i=0; i < questions.length; i++) {
-
-    var response = document.getElementById("showQuestion " + questions[i].prompt);
-    
-    var userAnswer = document.getElementById("userAnswer");
-
-    if(response === questions[i].answer){
-        score++;
-       
-
-    }else {
-       
-    }
-}
-
-// alert("You got " + score + "/" + questions.length);
-
-
-////// end the test game
-
-
-function ask(){
-    var show = document.getElementById("showQuestion")
-    
-}
-
 
 // timer// 
 
