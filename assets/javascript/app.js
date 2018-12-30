@@ -52,7 +52,7 @@ console.log(question[0]);
 
 for(i=0; i < question.length; i++) {
     ask = document.getElementById("showQuestion " + question[i]);
-    alert("question " + question);
+    $("#showQuestion").text(question[i]);
 }
 
 
