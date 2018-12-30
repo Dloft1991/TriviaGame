@@ -9,26 +9,54 @@ var wrong = 0;
 //questions
 var question = [
     {
+        one: {
         ask: "What color is Thanos?",
         option: ["pink", "blue", "red", "purple"],
         right: "purple",
+        }
     },
     {
+        two: {
         ask: "Who is Starloards favorite actor?",
         option: ["Brian Cranston", "Samuel L. Jackson", "Kevin Bacon", "Tom Cruse"],
         right: "Kevin Bacon",
+        }
     },
     {
+        three: {
         ask: "Where is SpiderMan from?",
         option: ["Orlando", "Queens", "Brooklyn", "Portland"],
         right: "Queens",
+        }
     },
     {
+        four: {
         ask: "How many kids does HawkEye have?",
         option: ["Nine", "Three", "Two", "Five"],
         right: "Two",
+        }
     },
 ];
+
+console.log(question);
+console.log(question.length);
+console.log(question[0]);
+
+// var start = $("#start").on('click', function() {
+//     score = 0;
+//     wrong = 0;
+//     correct = 0;
+//     answer = [];
+// });
+// var ask = question[Math.floor(Math.random() * question.length)];
+
+for(i=0; i < question.length; i++) {
+    ask = document.getElementById("showQuestion " + question[i]);
+    alert("question " + question);
+}
+
+
+
 
 // timer// 
 
@@ -66,8 +94,3 @@ var number = 10;
 
     run();
 
-// Questions
-
-function choose() {
-
-}
