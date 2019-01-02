@@ -16,13 +16,15 @@
 
     <main>
       
-      <h1>Avenger Trivia Game!</h1>
+      <h1 id="heading">Avenger Trivia Game!</h1>
 
       <!-- start button -->
-      <input id="button" type="button" value="Start Game" onclick="pageLoad();"></input>
+      
+        <input id="button" type="button" value="Start Game" onclick="pageLoad();"></input>
       <div id="after_start">
-
-
+      
+    
+       
         <!-- first page loading -->
       <div class="row">
         <div class="col-sm-2">
@@ -92,7 +94,9 @@
 </div>
 
   <!--after start div  -->
-</div>
+ <!-- restart button -->
+ <input id="button" type="button" value="Reset Game" onclick="restart();"></input> 
+ <div id="after_end"></div>
 
 
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

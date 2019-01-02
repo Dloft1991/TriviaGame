@@ -33,5 +33,18 @@ p {
 
 form {
   background: black;
-    opacity: .7;
+    /* opacity: .7; */
+    /* font-family: none; */
+  
+}
+
+#after_end {
+  visibility: hidden;
+}
+
+
+
+#start {
+  align: Center;
+
 }

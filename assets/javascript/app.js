@@ -1,8 +1,11 @@
 var game = document.querySelector('main');
 
 
+
+
 function pageLoad() {
     document.getElementById("after_start").style.visibility = "visible";
+    
 }
 
 function check() {
@@ -25,8 +28,14 @@ function check() {
   if (question4 == "Two") {
     correct++;
   }
-  // document.getElementById("after_submit").style.visibilty = "visible";
+
   document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
+  function restart() {
+      
+    pageLoad();
+    check();
+    
+  }
 }
 
 
@@ -52,7 +61,7 @@ var number = 11;
       $("#counter").html("<h2>" + number + "</h2>");
 
       if (number === 0) {
-        document.getElementById("after_start").style.visibility = "hidden";
+        
         stop();
 
         // alert("Time Up!");   
@@ -65,4 +74,6 @@ var number = 11;
     }
 
     run();
+
+   
   
