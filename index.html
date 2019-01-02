@@ -15,69 +15,84 @@
 <body>
 
     <main>
+      
+      <h1>Avenger Trivia Game!</h1>
 
-       <p id="counter">Counter: </p>
-       <p id="showQuestion">Question: </p>
-        <p id="userAnswer"></p>
-        <p id="wrong"></p>
-        <p id="correct"></p>
+      <!-- start button -->
+      <input id="button" type="button" value="Start Game" onclick="pageLoad();"></input>
+      <div id="after_start">
 
+
+        <!-- first page loading -->
+      <div class="row">
+        <div class="col-sm-2">
+            <h2><p id="timer"></p>Timer: </h2>
+        </div>
+        <div class="col-sm-10">
+            <p id="counter"> </p>
+          </div>
+      </div>
+     
+    
+        <form id="quiz" name="quiz">
         <div>
             <h3>What color is Thanos?</h3>
             <label>
-              <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Blue</label>
+              <input type="radio" id="mc" value="blue" name="question1" />Blue</label>
             <label>
-              <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Purple</label>
+              <input type="radio" id="mc" value="Purple" name="question1" />Purple</label>
             <label>
-              <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Red</label>
+              <input type="radio" id="mc" value="red" name="question1" />Red</label>
               <label>
-                <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Green</label>
+                <input type="radio" id="mc" value="green" name="question1" />Green</label>
             </div>
 
             <div>
                 <h3>Who is Starloards favorite actor? </h3>
                 <label>
-                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Brian Cranston</label>
+                  <input type="radio" id="mc"  value="Brian Cranston" name="question2" />Brian Cranston</label>
                 <label>
-                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Samual L. Jackson</label>
+                  <input type="radio" id="mc"  value="Samual L. Jackson" name="question2" />Samual L. Jackson</label>
                 <label>
-                  <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Kevin Bacon</label>
+                  <input type="radio" id="mc" value="Kevin Bacon" name="question2" />Kevin Bacon</label>
                   <label>
-                    <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Chris Pratt</label>
+                    <input type="radio" id="mc"  value="Chris Pratt" name="question2" />Chris Pratt</label>
                 </div>
       
                 <div>
                     <h3>Where is SpiderMan from? </h3>
                     <label>
-                      <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Queens</label>
+                      <input type="radio" id="mc"  value="Queens" name="question3" /> Queens</label>
                     <label>
-                      <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Orlando</label>
+                      <input type="radio" id="mc"  value="Orlando" name="question3" />Orlando</label>
                     <label>
-                      <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Brooklyn</label>
+                      <input type="radio" id="mc"  value="Brooklyn" name="question3" />Brooklyn</label>
                       <label>
-                        <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Portland</label>
+                        <input type="radio" id="mc"  value="Portland" name="question3" />Portland</label>
                     </div>
 
                     <div>
                         <h3>How many kids does HawkEye have? </h3>
                         <label>
-                          <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> Five</label>
+                          <input type="radio" id="mc"  value="Five" name="question4" /> Five</label>
                         <label>
-                          <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Twelve</label>
+                          <input type="radio" id="mc" value="Twelve" name="question4" />Twelve</label>
                         <label>
-                          <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Three</label>
+                          <input type="radio" id="mc" value="Three" name="question4" />Three</label>
                           <label>
-                            <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Two</label>
+                            <input type="radio" id="mc"  value="Two" name="question4" />Two</label>
                         </div>
-     
+                      </form>
+                      
+                    
     
+<input id="button" type="button" value="Submit my answers" onclick="check();"></input>
+<div id="after_submit">
+  <p id="number_correct"></p>
+</div>
 
-        <button>Next<p id="next"></p></button>
-        <button>Start<p id="start"></p></button>
-
-       <!-- <button id="stop">Stop</button>
-       <button id="resume">Resume</button>
-    -->
+  <!--after start div  -->
+</div>
 
 
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

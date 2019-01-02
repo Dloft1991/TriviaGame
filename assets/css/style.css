@@ -1,5 +1,10 @@
-p {
-    
+body {
+  font-family: 'Bungee Shade', cursive;
+  background: url('https://static1.srcdn.com/wordpress/wp-content/uploads/thor-bifrost-asgard.jpg');
+  color: white;
+}
+
+p { 
     font-size: 60px;
     margin-top: 0px;
   }
@@ -8,4 +13,25 @@ p {
     font-size: 40px;
   }
 
+#block {
+    background-color: lightgrey;
+    color: black;
+
+  }
+
+#after_submit {
   
+}
+
+#after_start {
+  visibility: hidden;
+}
+
+#timer {
+  padding-left: 200px;
+}
+
+form {
+  background: black;
+    opacity: .7;
+}
