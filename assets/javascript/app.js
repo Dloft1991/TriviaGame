@@ -41,7 +41,7 @@ function check() {
 
 // timer// 
 
-var number = 11;
+var number = 21;
 
     var intervalId;
 

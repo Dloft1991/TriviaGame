@@ -13,14 +13,10 @@ p {
     font-size: 40px;
   }
 
-#block {
-    background-color: lightgrey;
-    color: black;
 
-  }
 
-#after_submit {
-  
+#number_correct {
+  font-size: 45px;
 }
 
 #after_start {
@@ -33,18 +29,36 @@ p {
 
 form {
   background: black;
-    /* opacity: .7; */
-    /* font-family: none; */
+    opacity: .7;
+    font-family: none;
+    width: 800px;
+    text-align: center;
+    
+    margin-left: 20%;
   
 }
 
 #after_end {
   visibility: hidden;
+  background: black;
+    opacity: .7;
+
 }
-
-
 
 #start {
   align: Center;
 
 }
+
+label {
+  letter-spacing: 2px;
+}
+
+#timer {
+  background: black;
+    opacity: .7;
+   
+  
+}
+
+
