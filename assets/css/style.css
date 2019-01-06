@@ -34,9 +34,7 @@ form {
     font-family: none;
     width: 800px;
     text-align: center;
-    
     margin-left: 20%;
-  
 }
 
 #pick {
@@ -68,3 +66,87 @@ label {
 }
 
 
+@media only screen and (max-width: 600px) {
+
+
+  body {
+    font-family: 'Bungee Shade', cursive;
+    background: url('https://www.azonano.com/images/Article_Images/ImageForArticle_4983(1).jpg');
+    /* background: url('https://static1.srcdn.com/wordpress/wp-content/uploads/thor-bifrost-asgard.jpg'); */
+    color: white;
+  }
+  
+  p { 
+      font-size: 30px;
+      margin-top: 0px;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  h1 {
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  #number_correct {
+    font-size: 45px;
+  }
+  
+  #after_start {
+    visibility: hidden;
+    font-size: 20px;
+    color: white;
+  }
+
+  #button {
+    color: white;
+  }
+
+  #number_correct {
+    font-size: 20px;
+    color: white;
+  }
+  
+  #timer {
+    padding-left: 200px;
+  }
+  
+ 
+form {
+  background: black;
+    opacity: .7;
+    font-family: none;
+    width: 400px;
+    text-align: center;
+    margin-left: 7px;
+}
+  
+  #pick {
+    visibility: hidden;
+    margin-top: -200px;
+    margin-left: -20%;
+  }
+  #after_end {
+    visibility: hidden;
+    background: black;
+      opacity: .7;
+  }
+  
+  #start {
+    align: Center;
+  }
+  
+  label {
+    letter-spacing: 2px;
+  }
+  
+  #timer {
+    background: black;
+      opacity: .7;
+  }
+  
+}
