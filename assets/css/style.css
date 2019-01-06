@@ -39,6 +39,11 @@ form {
   
 }
 
+#pick {
+  visibility: hidden;
+  margin-top: -200px;
+  margin-left: -20%;
+}
 #after_end {
   visibility: hidden;
   background: black;

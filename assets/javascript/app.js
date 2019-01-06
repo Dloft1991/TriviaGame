@@ -6,6 +6,7 @@ var game = document.querySelector('main');
 function pageLoad() {
     document.getElementById("after_start").style.visibility = "visible";
     run();
+    number = 4;
 }
 
 function check() {
@@ -28,25 +29,28 @@ function check() {
   if (question4 == "Two") {
     correct++;
     document.getElementById("oneRight").style.visibility = "visible";
+    
   }
   
 
   document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
+  document.getElementById("after_start").style.visibility = "visible";
   
 }
 
 function restart() {
       
-  
-  document.getElementById("oneRight").style.visibility = "hidden";
   document.getElementById("after_start").style.visibility = "hidden";
+  document.getElementById("oneRight").style.visibility = "hidden";
+  document.getElementById("oneRight").style.visibility = "visible";
   stop();
-  var number = 21;
+   number = 4;
+
 }
 
 // timer// 
 
-var number = 21;
+var number = 4;
 
     var intervalId;
 
@@ -68,6 +72,8 @@ var number = 21;
       if (number === 0) {
         
         stop();
+       document.getElementById("pick").style.visibility = "visible";
+
 
         // alert("Time Up!");   
       }
