@@ -7,6 +7,7 @@ function pageLoad() {
     document.getElementById("after_start").style.visibility = "visible";
     run();
     number = 21;
+   
 }
 
 function check() {
@@ -28,12 +29,14 @@ function check() {
   }
   if (question4 == "Two") {
     correct++;
-    
   }
   
 
   document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
   document.getElementById("after_start").style.visibility = "visible";
+  // thor image
+  // document.getElementById("#thor").style.visibility = "visible";
+ 
   
 }
 
@@ -70,12 +73,7 @@ var number = 21;
       if (number === 0) {
         
         stop();
-       document.getElementById("pick").style.visibility = "visible";
        
-       
-
-
-        // alert("Time Up!");   
       }
     }
 

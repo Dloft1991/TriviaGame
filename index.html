@@ -19,16 +19,16 @@
       <div class="row">
         <div class="col-sm-12">
           <h1 id="heading">Avenger Trivia Game!</h1>
-
+          <p id="directions"> Click start to begin, <br> You have 20 seconds to <br> submit your answers.</p>   
         </div>
       </div>
       <!-- start button -->
       
         <input id="button" type="button" value="Start Game" onclick="pageLoad();"></input>
       <div id="after_start">
+        
       
-    
-       
+  
         <!-- first page loading -->
       <div class="row">
         <div class="col-sm-2">
@@ -88,29 +88,14 @@
                           <label>
                             <input type="radio" id="mc"  value="Two" name="question4" />Two</label>
                         </div>
-                      </form>
-
-                      <div id="photo" name="pictures">
-                        <div id="oneRight"></div>
-                        <div id="twoRight"></div>
-                        <div id="threeRight"></div>
-                        <div id="fourRight"></div>
-                      </div>
-                    
-    
+                      </form> 
 <input id="button" type="button" value="Submit my answers" onclick="check();"></input>
-<div id="after_submit">
-  <p id="number_correct"></p>
-</div>
-
-
-  <!--after start div  -->
- <!-- restart button -->
- 
- <input id="button" type="button" value="Reset Game" onclick="restart();"></input> 
- <div  id="after_end"></div>
- <!-- <img id="pick" src="assets/images/Marvel-Movie-Thor-Asgard-Shiny1.jpg"> -->
-
+    <div id="after_submit">
+      <p id="number_correct"></p>
+    </div>
+      <!-- reset button -->
+      <input id="button" type="button" value="Reset Game" onclick="restart();"></input> 
+      <div  id="after_end"></div>
 
 
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
