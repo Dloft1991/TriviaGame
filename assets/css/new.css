@@ -1,0 +1,19 @@
+.heading{
+    padding-top: 10%;
+    text-align: center;
+}
+#start{
+    text-align: center;
+}
+
+#quiz{
+    padding-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+
+#number_correct{
+    text-align: center;
+}
+

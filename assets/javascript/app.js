@@ -1,15 +1,6 @@
 var game = document.querySelector('main');
 
 
-
-
-function pageLoad() {
-    document.getElementById("after_start").style.visibility = "visible";
-    run();
-    number = 21;
-   
-}
-
 function check() {
 
   var question1 = document.quiz.question1.value;
@@ -43,6 +34,7 @@ function check() {
 function restart() {
       
   document.getElementById("after_start").style.visibility = "hidden";
+  
   
   stop();
    number = 21;
